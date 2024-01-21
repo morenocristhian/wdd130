@@ -1,0 +1,58 @@
+@import url("https://fonts.google.com/specimen/DM+Serif+Display?preview.text=hola&query=display");
+
+:root {
+    --primary-color: #c2c8ee;
+    --secondary-color: #9EA4E8;
+    --accent1-color: #0E0949;
+    --accent2-color: #4239A7;
+
+    --heading-font: "DM Serif Display", serif;
+    --paragraph-font: "Red Hat Display", serif;
+
+    --nav-background-color: #c2c8ee;
+    --nav-link-color: #9EA4E8;
+    --nav-hover-link-color: #0E0949;
+    --nav-hover-background-color: #4239A7;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 25px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
